@@ -12,7 +12,7 @@ export default function App() {
       <AboutSection />
       <MasterPlan />
       <FloorPlanCarousel />
-      <GalleryCarousel />
+      {/* <GalleryCarousel /> */}
       <LocationMap />
     </div>
   );
