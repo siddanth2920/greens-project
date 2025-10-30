@@ -1,0 +1,69 @@
+.about-container {
+  background-color: #fafafa;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.about-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: #111;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.about-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  color: #777;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+}
+
+.about-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.about-highlight {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.highlight-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.highlight-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.highlight-box h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: #111;
+  margin-bottom: 0.3rem;
+}
+
+.highlight-box p {
+  font-family: "Poppins", sans-serif;
+  color: #777;
+  font-size: 1rem;
+}
