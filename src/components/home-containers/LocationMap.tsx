@@ -1,13 +1,20 @@
 // LocationMap.tsx
 import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
+type Props = { onBack: () => void };
 
-export default function LocationMap() {
+export default function LocationMap({onBack}: Props) {
   const center = { lat: 12.9716, lng: 77.5946 }; // Example: Bangalore
   const lat = 17.2225;  // 17° 13' 21" N
   const lng = 78.5761;  // 78° 34' 34" E
  const placeName = "The Greens";
   return (
-    <section className="h-[500px]">
+    <section className="h-[900px]">
+            <button
+        onClick={onBack}
+        className="absolute top-5 left-5 bg-white/80 text-black px-4 py-2 rounded-full text-sm"
+      >
+        Back
+      </button>
       <iframe
         src={`https://maps.google.com/maps?q=${lat},${lng}&hl=en&z=15&output=embed`}
         width="100%"

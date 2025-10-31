@@ -16,14 +16,19 @@ import img9 from "../../assets/greensfloorplans/333w3-min.png";
 import img10 from "../../assets/greensfloorplans/262e1-min.png";
 import img11 from "../../assets/greensfloorplans/262e2-min.png";
 import img12 from "../../assets/greensfloorplans/262e3-min.png";
-
-export default function FloorPlanCarousel() {
+type Props = { onBack: () => void };
+export default function FloorPlanCarousel({onBack}: Props) {
   const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
 
   return (
     <section className="py-20 bg-white">
       <h2 className="text-3xl font-semibold text-center mb-8">Floor Plans</h2>
-
+      <button
+        onClick={onBack}
+        className="absolute top-5 left-5 bg-white/80 text-black px-4 py-2 rounded-full text-sm"
+      >
+        Back
+      </button>
       <Swiper
         modules={[Navigation, Pagination]}
         slidesPerView={1}

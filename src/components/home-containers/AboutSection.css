@@ -1,6 +1,6 @@
 .about-section {
-    background-image: url(../../assets/gal.png);
-     background-size: cover;
+  background-image: url(../../assets/ameneties/11.png);
+  background-size: contain;
   background-position: center;
-  position: relative;
+  background-repeat: no-repeat;
 }
