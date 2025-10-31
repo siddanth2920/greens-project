@@ -13,7 +13,7 @@ export default function MasterPlan({ onBack }: Props) {
       <img
         src={img1}
         alt="Master Plan"
-        className="max-w-4xl mx-auto rounded-lg shadow-lg"
+        className="w-full object-cover"
       />
     </section>
   );

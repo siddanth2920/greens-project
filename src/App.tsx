@@ -8,17 +8,15 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 
 function App() {
- return (     <Router>
-      {/* ✅ Router wraps your Header and Routes */}
+ return (     
+ 
+ <Router>
       {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-        {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
-    </Router>)
+    </Router>
+    )
 }
 
 export default App;

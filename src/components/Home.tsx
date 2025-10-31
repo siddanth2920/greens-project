@@ -7,17 +7,11 @@ import LocationMap from '../components/home-containers/LocationMap';
 import FloorPlanCarousel from './home-containers/FloorPlans';
 import { useState } from 'react';
 import Ameneties from './home-containers/ameneties';
-type Section =
-  | "hero"
-  | "about"
-  | "master"
-  | "floor"
-  | "location"
-  | "ameneties";
+import Navbar from './Navbar';
+import { Section } from '../types';
 
 export default function App() {
   const [current, setCurrent] = useState<Section>("hero");
-
   const renderSection = () => {
     switch (current) {
       case "about":
@@ -39,7 +33,14 @@ export default function App() {
     }
   };
 
-  return <div className="w-full h-screen">{renderSection()}</div>;
+  return (
+    <div className="w-full h-screen">
+      {current !== "hero" && (
+        <Navbar onNavigate={(val: Section) => setCurrent(val)} currentSection={current} />
+      )}
+      {renderSection()}
+    </div>
+  );
 }
 // export default function App() {
 //   return (
