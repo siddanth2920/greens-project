@@ -14,7 +14,7 @@ export default function HeroSection({ onNavigate }: Props) {
     >
       <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white">
         <h1 className="text-5xl font-bold">The Greens</h1>
-        <p className="text-lg mt-4 mb-10">Building Dreams. Crafting Reality.</p>
+        <p className="text-lg mt-4 mb-10">Where nature whispers and luxury listens — your green villa escape, far from the city’s rush.</p>
         <div className="flex flex-wrap gap-4 justify-center max-w-3xl">
           {buttons.map((b) => (
             <button
