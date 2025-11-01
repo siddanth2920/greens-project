@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Ameneties from './home-containers/ameneties';
 import Navbar from './Navbar';
 import { Section } from '../types';
+import Contact from './home-containers/contact';
 
 export default function App() {
   const [current, setCurrent] = useState<Section>("hero");
@@ -24,6 +25,8 @@ export default function App() {
         return <LocationMap onBack={() => setCurrent("hero")} />;
       case "ameneties":
         return <Ameneties onBack={() => setCurrent("hero")} />;
+      case "contact":
+        return <Contact onBack={() => setCurrent("hero")} />;
       default:
         return (
           <HeroSection

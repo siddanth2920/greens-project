@@ -8,13 +8,13 @@ export default function LocationMap({onBack}: Props) {
   const lng = 78.5761;  // 78° 34' 34" E
  const placeName = "The Greens";
   return (
-    <section className="h-[900px]">
-            <button
+    <section className="h-[900px] pt-16">
+            {/* <button
         onClick={onBack}
         className="absolute top-5 left-5 bg-white/80 text-black px-4 py-2 rounded-full text-sm"
       >
         Back
-      </button>
+      </button> */}
       <iframe
         src={`https://maps.google.com/maps?q=${lat},${lng}&hl=en&z=15&output=embed`}
         width="100%"

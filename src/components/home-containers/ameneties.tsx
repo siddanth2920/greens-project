@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import img1 from "../../assets/ameneties/1.jpg";
+import img1 from "../../assets/ameneties/11.png";
 import img2 from "../../assets/ameneties/2.jpg";
 import img3 from "../../assets/ameneties/3.jpg";
 import img4 from "../../assets/ameneties/4.jpg";
@@ -10,30 +10,31 @@ import img7 from "../../assets/ameneties/7.jpg";
 import img8 from "../../assets/ameneties/8.jpg";
 import img9 from "../../assets/ameneties/9.jpg";
 import img10 from "../../assets/ameneties/10.jpg";
-import img11 from "../../assets/ameneties/11.jpg";
+import img11 from "../../assets/ameneties/1.jpg";
 // add more imports...
 
 type Props = { onBack: () => void };
 
 export default function Ameneties({ onBack }: Props) {
-  const images = [img1, img2, img3, img4]; // add more here
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11]; // add more here
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((p) => (p + 1) % images.length);
-    }, 3000); // 3s per slide
+    }, 2000); // 3s per slide
     return () => clearInterval(timer);
   }, [images.length]);
 
   return (
-    <section className="h-screen w-full relative bg-black flex items-center justify-center overflow-hidden">
-    <button
+   <section className="h-screen w-full relative bg-black flex items-center justify-center overflow-hidden pt-32">
+
+    {/* <button
         onClick={onBack}
         className="absolute top-5 left-5 bg-white/80 text-black px-4 py-2 rounded-full text-sm z-50"
       >
         Back
-      </button>
+      </button> */}
   
 
       {images.map((src, i) => (

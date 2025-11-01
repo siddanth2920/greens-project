@@ -16,7 +16,7 @@ export default function HeroSection({ onNavigate }: Props) {
         <h1 className="text-5xl font-bold">The Greens</h1>
         <p className="text-lg mt-4 mb-10">Where nature whispers and luxury listens — your green villa escape, far from the city’s rush.</p>
         <div className="flex flex-wrap gap-4 justify-center max-w-3xl">
-          {buttons.map((b) => (
+          {buttons.filter(b => b.label !== 'Home').map(b => (
             <button
               key={b.key}
               onClick={() => onNavigate(b.key)}

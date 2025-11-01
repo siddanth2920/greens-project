@@ -23,12 +23,12 @@ export default function FloorPlanCarousel({onBack}: Props) {
   return (
     <section className="py-20 bg-white">
       <h2 className="text-3xl font-semibold text-center mb-8">Floor Plans</h2>
-      <button
+      {/* <button
         onClick={onBack}
         className="absolute top-5 left-5 bg-white/80 text-black px-4 py-2 rounded-full text-sm"
       >
         Back
-      </button>
+      </button> */}
       <Swiper
         modules={[Navigation, Pagination]}
         slidesPerView={1}
