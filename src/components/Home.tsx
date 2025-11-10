@@ -2,7 +2,6 @@
 import HeroSection from '../components/home-containers/heroSection';
 import AboutSection from './home-containers/AboutSection';
 import MasterPlan from '../components/home-containers/MasterPlan';
-import GalleryCarousel from './home-containers/GalleryCarousel';
 import LocationMap from '../components/home-containers/LocationMap';
 import FloorPlanCarousel from './home-containers/FloorPlans';
 import { useState } from 'react';

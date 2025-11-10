@@ -1,12 +1,11 @@
 // LocationMap.tsx
-import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
 type Props = { onBack: () => void };
 
 export default function LocationMap({onBack}: Props) {
-  const center = { lat: 12.9716, lng: 77.5946 }; // Example: Bangalore
+  //const center = { lat: 12.9716, lng: 77.5946 }; // Example: Bangalore
   const lat = 17.2225;  // 17° 13' 21" N
   const lng = 78.5761;  // 78° 34' 34" E
- const placeName = "The Greens";
+  //const placeName = "The Greens";
   return (
     <section className="h-[900px] pt-16">
             {/* <button

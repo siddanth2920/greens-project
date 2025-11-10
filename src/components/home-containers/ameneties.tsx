@@ -41,6 +41,7 @@ export default function Ameneties({ onBack }: Props) {
         <img
           key={i}
           src={src}
+          alt={`Amenity image ${i + 1}`} 
           className={`absolute w-full h-full object-contain transition-opacity duration-1000 ${
             i === index ? "opacity-100" : "opacity-0"
           }`}
