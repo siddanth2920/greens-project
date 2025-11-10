@@ -10,6 +10,7 @@ import Ameneties from './home-containers/ameneties';
 import Navbar from './Navbar';
 import { Section } from '../types';
 import Contact from './home-containers/contact';
+import heroImg from "../assets/bg1.jpg";
 
 export default function App() {
   const [current, setCurrent] = useState<Section>("hero");
@@ -37,11 +38,23 @@ export default function App() {
   };
 
   return (
-    <div className="w-full h-screen">
-      {current !== "hero" && (
-        <Navbar onNavigate={(val: Section) => setCurrent(val)} currentSection={current} />
-      )}
-      {renderSection()}
+    <div
+      className="w-full min-h-screen bg-cover bg-center relative"
+      style={{ backgroundImage: `url(${heroImg})` }}
+    >
+      {/* dark overlay to make text readable */}
+      <div className="absolute inset-0 bg-black/30 z-0"></div>
+
+      {/* main content over overlay */}
+      <div className="relative z-10">
+        {current !== "hero" && (
+          <Navbar
+            onNavigate={(val: Section) => setCurrent(val)}
+            currentSection={current}
+          />
+        )}
+        {renderSection()}
+      </div>
     </div>
   );
 }

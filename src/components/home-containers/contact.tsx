@@ -7,12 +7,12 @@ export default function Contact({ onBack }: Props) {
     >
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full text-center space-y-6">
 
-        <button
+        {/* <button
           onClick={onBack}
           className="absolute top-5 left-5 bg-black/80 text-white px-4 py-2 rounded-full text-sm"
         >
           Back
-        </button>
+        </button> */}
 
         <h2 className="text-3xl font-semibold text-green-700 mb-4">
           Contact Us

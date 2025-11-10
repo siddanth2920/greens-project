@@ -1,5 +1,5 @@
 // HeroSection.tsx
-import heroImg from "../../assets/villa.jpg";
+import heroImg from "../../assets/bg1.jpg";
 import { buttons } from "../Navbar";
 
 type Props = {
